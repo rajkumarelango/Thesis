@@ -1,0 +1,48 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@input{_aux/title_page_EN.aux}
+\@newglossary{main}{glg}{gls}{glo}
+\@newglossary{acronym}{alg}{acr}{acn}
+\@istfilename{thesis.ist}
+\@glsorder{word}
+\@input{_aux/title_page_DE.aux}
+\@input{_aux/affidavit_EN.aux}
+\@input{_aux/affidavit_DE.aux}
+\@writefile{loe}{\contentsline {definition}{\numberline {1}\MakeUppercase  {d}efinition\thmtformatoptarg {Definition of Sky}}{iv}{definition.1}}
+\@writefile{loe}{\contentsline {theorem}{\numberline {1}\MakeUppercase  {t}heorem\thmtformatoptarg {Lorem}}{iv}{theorem.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {0.1}{\ignorespaces This is the caption of a sample table. it will also appear in your list of tables}}{v}{table.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {0.1}{\ignorespaces Sample-picture. This will also be readable in the list of figures}}{v}{figure.1}}
+\@writefile{toc}{\contentsline {part}{I\hspace  {1em}Introduction}{1}{part.1}}
+\@writefile{toc}{\contentsline {part}{II\hspace  {1em}Body of Work}{2}{part.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}A big section}{2}{section.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}A subsection}{2}{subsection.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.1}A subsubsection}{2}{subsubsection.1.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Another big section}{2}{section.2}}
+\@writefile{toc}{\contentsline {part}{III\hspace  {1em}Conclusion and Outlook}{3}{part.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}A big section}{3}{section.3}}
+\@writefile{toc}{\contentsline {part}{IV\hspace  {1em}End Material}{4}{part.4}}
+\@writefile{toc}{\contentsline {section}{Material}{4}{section*.4}}
+\@writefile{toc}{\contentsline {section}{List of Figures}{5}{section*.4}}
+\@writefile{toc}{\contentsline {section}{List of Tables}{6}{section*.5}}
+\@writefile{toc}{\contentsline {section}{Abbreviations}{8}{section*.7}}
+\citation{*}
+\bibstyle{apa}
+\bibdata{./biblio/thesis}
+\@writefile{toc}{\contentsline {section}{Glossary}{9}{section*.7}}
+\@writefile{toc}{\contentsline {section}{Bibliography}{9}{section*.7}}

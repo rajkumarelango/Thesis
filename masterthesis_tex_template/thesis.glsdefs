@@ -1,0 +1,90 @@
+\ifglsentryexists{cl}{}%
+{%
+\gls@defglossaryentry{cl}%
+{%
+name={CL},%
+sort={CL},%
+type={acronym},%
+first={Cognitive Load (CL)},%
+firstplural={Cognitive Loads(CLs)},%
+text={CL},%
+plural={CLs},%
+description={Cognitive Load},%
+descriptionplural={Cognitive Load\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Cognitive Load},%
+longplural={Cognitive Loads},%
+short={CL},%
+shortplural={CLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{msc}{}%
+{%
+\gls@defglossaryentry{msc}%
+{%
+name={M.Sc.},%
+sort={M.Sc.},%
+type={acronym},%
+first={Master of science (M.Sc.)},%
+firstplural={Master of sciences(M.Sc.s)},%
+text={M.Sc.},%
+plural={M.Sc.s},%
+description={Master of science},%
+descriptionplural={Master of science\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Master of science},%
+longplural={Master of sciences},%
+short={M.Sc.},%
+shortplural={M.Sc.s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{srh}{}%
+{%
+\gls@defglossaryentry{srh}%
+{%
+name={SRH},%
+sort={SRH},%
+type={acronym},%
+first={Stiftung Rehabilitation Heidelberg (SRH)},%
+firstplural={Stiftung Rehabilitation Heidelbergs(SRHs)},%
+text={SRH},%
+plural={SRHs},%
+description={Stiftung Rehabilitation Heidelberg},%
+descriptionplural={Stiftung Rehabilitation Heidelberg\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Stiftung Rehabilitation Heidelberg},%
+longplural={Stiftung Rehabilitation Heidelbergs},%
+short={SRH},%
+shortplural={SRHs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

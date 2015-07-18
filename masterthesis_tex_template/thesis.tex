@@ -1,0 +1,331 @@
+\documentclass[a4paper, 12pt,oneside]{article}
+\usepackage[paper=a4paper,left=30mm,right=25mm,top=25mm,bottom=25mm,includeheadfoot]{geometry}
+\usepackage{framed}%this package is the basis for the 'framed'-elements
+%\usepackage[ngerman]{babel}
+%uncomment the previous line to automatically translate the standard-elements to german. Otherwise they will be in english
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{dtklogos}% enables writing BibTeX in its special notation and similar symbols. not needed for TeX and LaTeX special writing styles
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[acronym]{glossaries}%put this line before the hyperref-inclusion to have glossaries without links
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\usepackage{color}
+\usepackage{datetime}
+\usepackage{natbib}%setting for bibliography-integration-package
+\bibpunct{(}{)}{;}{a}{,}{,}
+
+%the basics for theorems, definitions and lemmata
+%more info on http://en.wikibooks.org/wiki/LaTeX/Theorems
+%even more on http://www.math.uiuc.edu/~hildebr/tex/tips-theorems.html
+\usepackage{amsthm}%used for writing theorems
+\usepackage{thmtools}%also used for writing theorems
+\declaretheorem{theorem}
+\declaretheorem[style=definition]{definition}
+\declaretheorem{example}
+
+
+\usepackage[final]{pdfpages}%enables PDF-inclusion
+\usepackage{chngcntr}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}%captions in tables and figures are numbered by the section
+%\counterwithin{definition}{subsubsection}
+
+\hyphenation{con-textualize Ent-wurf}% definition for hyphenation-rules. enter the desired hyphenation-style for words to override the defaults. Entries are separated by a space
+
+\begin{document}
+\makeatletter
+\newcommand{\@Title}[1]{\def\Title{#1}}
+\newcommand{\@Student}[1]{\def\Student{#1}}
+\newcommand{\@PrimarySupervisor}[1]{\def\PrimarySupervisor{#1}}
+\newcommand{\@SecondarySupervisor}[1]{\def\SecondarySupervisor{#1}}
+
+
+%
+%
+% Data for your titlepage:
+%
+%
+
+\@Title{Analysis of Solution Data} % The Title of your Thesis goes between the brackets
+
+\@Student{Rajkumar Elango} %your name belongs beween these two brackets
+
+\@PrimarySupervisor{Prof. Dr. Peter Misch} %The full Name AND Title of your primary supervisor belongs between these brackets (It must be one of the Professors at the Department)
+
+\@SecondarySupervisor{Matthaeus Martynus, SAP} %The full name and Title of your secondary supervisor belongs in between these two brackets. (That can be anyone - even outside this department - who has the degree you are seeking to obtain: M.Sc. or higher in Computerscience)
+%if you chose a secondary supervisor from another company, you are advised to add the name of the company in brackets behind the Supervisors name
+
+%
+%
+% end of Data for your titlepage
+%
+%
+\makeatother
+
+%
+%
+% Translation-segment:
+%
+%
+
+%\renewcommand\listtheoremname{Liste der Theoreme}
+%uncomment the previous line to translate the list of theorems to german
+
+
+
+%\renewcommand*{\glossaryname}{My new name}
+%uncomment the previous line to rename the Glossary
+
+%\deftranslation{Acronyms}{Abkürzungen}
+%uncomment the previous line to translate the term Acronyms into the german term 'Abkürzungen'
+
+
+%
+%
+% end of Translation-segment
+%
+%
+
+%\makeglossaries
+
+%
+%
+% Acronym-definition-segment:
+%
+%
+
+%entry style is:
+%\newacronym{short form as used in the code}{Abbreviation as displayed in the Text}{Description that will appear in the Abbreviation glossary at the end}
+
+\newacronym{cl}{CL}{Cognitive Load}
+\newacronym{msc}{M.Sc.}{Master of science}
+\newacronym{srh}{SRH}{Stiftung Rehabilitation Heidelberg}
+
+%
+%
+% end of Acronym-definition-segment
+%
+%
+
+\hypersetup{pageanchor=false}
+\graphicspath{{./img/}} %the folder for the graphics is defined here
+
+\include{_aux/title_page_EN}
+\include{_aux/title_page_DE}
+%comment the title_page_EN and uncomment title_page_DE to get the german version
+
+\thispagestyle{empty}%this inserts an empty page between these two
+
+\include{_aux/affidavit_EN} 
+\include{_aux/affidavit_DE} 
+%comment the affidavit_EN and uncomment affidavit_DE to get the german version
+
+% keep in mind: sign the affidavit in handwriting before handing your work in. otherwise
+
+%
+%
+% Acknowledgements-segment (optional):
+%
+%
+
+%uncomment the following lines to properly include Acknowledgements in your Thesis in the correct location
+
+%\newpage
+%\thispagestyle{empty}
+%\begin{center} \begin{LARGE}
+%Acknowledgements
+%\end{LARGE} \end{center}  
+%\vspace{4em}
+%you can include the Acknowledgements below here
+%I would like to use this occasion to thank...
+%\pagebreak
+
+%
+%
+% end of Acknowledgements-segment
+%
+%
+
+\thispagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\thispagestyle{plain}
+\setcounter{page}{1}
+\pagenumbering{roman}
+\onehalfspacing
+
+\begin{center}
+{\LARGE Abstract}
+\end{center}
+
+
+
+
+%end of samples
+\newpage %this command enforces the creation of a new page
+
+%
+%
+% Zusammenfassungs-Segement (the geman version of the abstract) uncomment the content of this segment to use it:
+%
+% Remember: if you write in german, you must write a german AND an english abstract. If you write in english, including only an english abstract will suffice.
+%
+
+%\begin{center}
+%{\LARGE Zusammenfassung}
+%\end{center}
+
+%Platz für Ihren Text
+%\newpage %this command enforces the creation of a new page
+
+%
+%
+% end of Zusammenfassungs-Segement 
+%
+%
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%put your Content after this marker
+\part{Introduction}
+\section{About SAP}
+This is a section about SAP AG. Will fill this later..
+\section{Concept and Motivation}
+My Idea for a thesis started when I came to know about the BSR coordinators where still using the good old Microsoft Excel to create Charts and Figures to calculate and distribute the monthly visitor statistics of the SAP Solution Explorer home page.
+
+It was during this time I was working on the SAP UI5 framework and the HANA Cloud Platform, building web pages with an ability to view it also on smart phones, tablets and also regular computers without the loss of information or the usability.
+
+I approached my manager and gave this idea that I would build dashboards for the users with the data extracted from the Solution Explorer tool. The advantages of this would be the on the fly statistics creation of the different Vistors from any location using a smart phone or a laptop.
+\section{Brief Introduction about the Chapters that follow}
+
+\pagebreak
+\part{Background}
+\section{Overview}
+\subsection{Need for a tool}
+\subsection{Improvements and Increase of use in Mobile Technology}
+\subsection{Development of cloud based systems}
+\subsection{Advancement in In-memory databases}
+\subsection{Web Analytics}
+
+\section{Solutions / Products Used}
+\subsection{Solution Explorer}
+\subsection{BSR Authoring Tool}
+\subsection{Tracker API}
+\subsection{WARP API}
+\subsection{Data Explorer}
+\subsection{Piwik}
+
+\section{Objectives}
+
+\part{Requirement Analysis}
+\section{Use Case - Coordinators}
+\section{Dashboards Block Diagram}
+
+
+\part{Approach}
+\section{Data Vizualization}
+\subsection{Charts - SAP Viz library}
+\section{Responsive Web Design}
+\subsection{SAP UI5}
+\section{MVC Architecture}
+\subsection{Model}
+\subsection{View}
+\subsection{Controller}
+
+\part{Development Environment}
+\section{Eclipse with SAP UI5 plugin}
+\section{SAP HANA Web IDE}
+\section{Monsoon Cloud Computing}
+
+\part{Technologies Used}
+\section{SAP UI5}
+\subsection{Overview}
+\subsection{Architectural Overview}
+\subsection{Advantages of using SAP UI5}
+
+\section{SAP HANA Database}
+\subsection{Overview}
+\subsection{XSJS}
+
+\section{Monsoon Cloud Computing}
+\subsection{Overview}
+\subsection{Chef Recipe}
+
+\section{Git}
+\subsection{Overview}
+\subsection{Common Git commands}
+
+\section{Build automation}
+\subsection{Overview}
+\subsection{Bamboo}
+
+\part{Development Phase}
+\section{Detailed Requirement for Dashboards}
+\section{Development using the WARP API}
+\section{Deployment in the productive system}
+
+\pagebreak
+\part{Conclusion and Outlook}
+
+\pagebreak
+\part{End Material}
+
+\addcontentsline{toc}{section}{Material}
+
+%
+%
+% start of material segment:
+%
+%
+
+% remember: you can also include PDF-pages (see the samples above)
+
+%
+%
+% end of material-segment
+%
+%
+
+
+%After this line you should only change the naming of some parts or uncomment some lines where a comment gives you an explaination what to do. You should only change the structure and content beyond this point if you're sure you know what you're doing TeX-wise
+
+\pagebreak
+\addcontentsline{toc}{section}{List of Figures}%Creates an Entry in the table of contents without giving this a chapter number (looks more neat)
+\listoffigures
+
+\pagebreak
+\addcontentsline{toc}{section}{List of Tables}%Creates an Entry in the table of contents without giving this a chapter number (looks more neat)
+\listoftables
+
+\pagebreak
+\listoftheorems
+
+%\renewcommand*{\glspostdescription}{}
+%uncoment the previous line to get rid of the dot at the end of the description in the glossary
+
+\pagebreak
+\addcontentsline{toc}{section}{Abbreviations}%Creates an Entry in the table of contents without giving this a chapter number (looks more neat)
+\printglossary[type=\acronymtype] % prints just the list of acronyms
+
+\pagebreak
+\addcontentsline{toc}{section}{Glossary}%Creates an Entry in the table of contents without giving this a chapter number (looks more neat)
+\printglossary % full glossary
+
+
+\addcontentsline{toc}{section}{Bibliography}%Creates an Entry in the table of contents without giving this a chapter number (looks more neat)
+
+\nocite{*}%comment out this line if you don not wish to automatically include all entries from the thesis-bibliography
+\bibliographystyle{apa}
+\bibliography{./biblio/thesis}
+
+\end{document}
